@@ -1,0 +1,7 @@
+<script type="text/discourse-plugin" version="1.25.0">
+  api.onPageChange((url) => {
+    if (url.includes("/docs")) {
+        document.body.classList.remove("has-sidebar-page")
+    } else document.body.classList.add("has-sidebar-page")
+  });
+</script>
